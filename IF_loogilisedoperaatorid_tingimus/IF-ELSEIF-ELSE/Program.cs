@@ -10,6 +10,32 @@
             //kui ta on lühem kui 2m, ütle tavaline kolge
             //kui ta on pikem kui 2m, ütle hiiglane
 
+            Console.WriteLine("Kui pikk sa oled? sisesta sentimeetrites");
+            int pikkus = int.Parse(Console.ReadLine());
+            if(pikkus < 0)
+            {
+                Console.WriteLine("Selline pikkus on võimatu");
+            }
+            else if (pikkus < 100)
+            {
+                Console.WriteLine("Oled juntsu, hit the gym");
+            }
+            else if (pikkus < 200) 
+            {
+                Console.WriteLine("Oled normi pikkusega kolge");
+            }
+            else if (pikkus > 200)
+            {
+                Console.WriteLine("Ossaraks, vaat kus hiiglane!");
+            }
+
+
+                /*  estonski jasõk
+                 () sulud
+                 [] kandilised sulud / nurksulud
+                 {} loogelised sulud
+                 */
+
             //küsi kasutajalt kui vana ta on
             //küsi kasutajalt praegust aastaarvu
             //lahuta aastast kasutaja vanus
