@@ -14,6 +14,15 @@
             // -> do while tsükli tingimuseks kirjuta kontroll, mis kontrollib kas muutujas "täisarv" on arv miinuses rohkem kui -31
             // peale tsüklit kuva sõnum "tsükkel lõppes"
 
+            int täisArv = 0;
+            do
+            {
+                //täisArv = täisArv - 2;
+                täisArv -= 2;
+                Console.WriteLine(täisArv);
+            } while (täisArv > -31);
+            Console.WriteLine("Tsükkel lõppes");
+
             // 2. "pikenda sõnumit"
             // tee muutuja "sõnum" mille sees on tühi string, nt ""
             // kirjuta do while tsükkel
@@ -77,19 +86,19 @@
             // kui sisemine tsükkel on lõpetanud, siis kuva kasutajale see rida välja
             // kui ka esimene tsükkel on lõpetanud, siis kuva kasutajale tekst "tsüklid on lõpetanud"
 
-            int ruuduKülg = 0;
-            Console.WriteLine("kui suurt ruutu sa tahad");
-            ruuduKülg = int.Parse(Console.ReadLine());
-            for(int i = 0; i < ruuduKülg;i++)
-            {
-                string seeRida = "";
-                for(int j = 0; j < ruuduKülg; j++ )
-                {
-                    seeRida += "HH";
-                }
-                Console.WriteLine(seeRida);
-            }
-            Console.WriteLine("Tsüklid on lõpetanud");
+            //int ruuduKülg = 0;
+            //Console.WriteLine("kui suurt ruutu sa tahad");
+            //ruuduKülg = int.Parse(Console.ReadLine());
+            //for(int i = 0; i < ruuduKülg;i++)
+            //{
+            //    string seeRida = "";
+            //    for(int j = 0; j < ruuduKülg; j++ )
+            //    {
+            //        seeRida += "HH";
+            //    }
+            //    Console.WriteLine(seeRida);
+            //}
+            //Console.WriteLine("Tsüklid on lõpetanud");
 
 
             /* Foreach + list ülesanded */
