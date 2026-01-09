@@ -10,31 +10,31 @@
             //kui ta on lühem kui 2m, ütle tavaline kolge
             //kui ta on pikem kui 2m, ütle hiiglane
 
-            Console.WriteLine("Kui pikk sa oled? sisesta sentimeetrites");
-            int pikkus = int.Parse(Console.ReadLine());
-            if(pikkus < 0)
-            {
-                Console.WriteLine("Selline pikkus on võimatu");
-            }
-            else if (pikkus < 100)
-            {
-                Console.WriteLine("Oled juntsu, hit the gym");
-            }
-            else if (pikkus < 200) 
-            {
-                Console.WriteLine("Oled normi pikkusega kolge");
-            }
-            else if (pikkus > 200)
-            {
-                Console.WriteLine("Ossaraks, vaat kus hiiglane!");
-            }
+            //Console.WriteLine("Kui pikk sa oled? sisesta sentimeetrites");
+            //int pikkus = int.Parse(Console.ReadLine());
+            //if(pikkus < 0)
+            //{
+            //    Console.WriteLine("Selline pikkus on võimatu");
+            //}
+            //else if (pikkus < 100)
+            //{
+            //    Console.WriteLine("Oled juntsu, hit the gym");
+            //}
+            //else if (pikkus < 200) 
+            //{
+            //    Console.WriteLine("Oled normi pikkusega kolge");
+            //}
+            //else if (pikkus > 200)
+            //{
+            //    Console.WriteLine("Ossaraks, vaat kus hiiglane!");
+            //}
 
 
-                /*  estonski jasõk
-                 () sulud
-                 [] kandilised sulud / nurksulud
-                 {} loogelised sulud
-                 */
+            //    /*  estonski jasõk
+            //     () sulud
+            //     [] kandilised sulud / nurksulud
+            //     {} loogelised sulud
+            //     */
 
             //küsi kasutajalt kui vana ta on
             //küsi kasutajalt praegust aastaarvu
@@ -45,6 +45,45 @@
             //    kui jah, ütle tubli
             //    kui ei, ütle kahju
             //kui kasutaja on sündinud enne 2010, küsi mitu rage comicsit ta täna oma redditi lugemise ajal leidis 
+
+            Console.WriteLine("Kui vana sa oled?");
+            int kasutajaVanus = 0;
+            kasutajaVanus = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Mis aasta hetkel kalendris on?");
+            int praeguneAasta = 0;
+            praeguneAasta = int.Parse(Console.ReadLine());
+
+            int generatsioon = praeguneAasta - kasutajaVanus;
+
+            if(generatsioon <= 2025 && generatsioon > 2020)
+            {
+                Console.WriteLine("Kes sulle arvuti juba andis?");
+            }
+            else if(generatsioon <= 2020 && generatsioon > 2015)
+            {
+                Console.WriteLine("Skibidi sigmaless");
+            }
+            else if(generatsioon <= 2015 && generatsioon > 2010)
+            {
+                Console.WriteLine("Kas tahad saada programmeerijaks?");
+                string vastus = "";
+                vastus = Console.ReadLine();
+                if(vastus =="jah")
+                {
+                    Console.WriteLine("JEJEEEE TUBLI!! :D häpifeiss");
+                }
+                else
+                {
+                    Console.WriteLine("Kahjuuu.. :c äm säd");
+                }
+            }
+            else if(generatsioon <= 2010)
+            {
+                Console.WriteLine("mitu rage comicsit sa täna oma redditi lugemise ajal leidsid?");
+            }
+
+
 
             //küsi kasutajalt tema elukoha suunakoodi
             //kui suunakood on väiksem kui 5 tähte, ütle talle, 1 täht on puudu
@@ -64,8 +103,8 @@
             //  kui 2FA kood on pikem kui 6 tähte, ütle sissepääs keelatud, kood on liiga pikk
             //  kui 2FA kood on 6 tähte, siis lase sisse, öeldes "oled sissepääsenud"
             //NB: 2FA kood ei pea matchima eksisteeriva näitega nagu parool.
-            
-            
+
+
         }
     }
 }
