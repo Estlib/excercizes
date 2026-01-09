@@ -14,14 +14,14 @@
             // -> do while tsükli tingimuseks kirjuta kontroll, mis kontrollib kas muutujas "täisarv" on arv miinuses rohkem kui -31
             // peale tsüklit kuva sõnum "tsükkel lõppes"
 
-            int täisArv = 0;
-            do
-            {
-                //täisArv = täisArv - 2;
-                täisArv -= 2;
-                Console.WriteLine(täisArv);
-            } while (täisArv > -31);
-            Console.WriteLine("Tsükkel lõppes");
+            //int täisArv = 0;
+            //do
+            //{
+            //    //täisArv = täisArv - 2;
+            //    täisArv -= 2;
+            //    Console.WriteLine(täisArv);
+            //} while (täisArv > -31);
+            //Console.WriteLine("Tsükkel lõppes");
 
             // 2. "pikenda sõnumit"
             // tee muutuja "sõnum" mille sees on tühi string, nt ""
@@ -31,6 +31,16 @@
             // kuva muutuja "sõnum" välja
             // -> do while tsükli tingimuseks kirjuta kontroll, mis kontrollib muutuja "sõnum" pikkust .Length abil, kui sõnum on pikem kui 140 tähte, siis tsükkel lõppeb
             // peale tsüklit kuva sõnum "see sõnum enam twitterisse ei mahuks, kirjuta vähem fam"
+
+            string sõnum = "";
+            do
+            {
+                Console.WriteLine("Palun lisa järgmine sõnumi osa: ");
+                sõnum += Console.ReadLine();
+                Console.WriteLine(sõnum);
+            } while (sõnum.Length < 140);
+            Console.WriteLine("See sõnum enam Twixxerisse ei mahuks, kirjuta vähem fäm.");
+
 
             /* While ülesanded*/
 
