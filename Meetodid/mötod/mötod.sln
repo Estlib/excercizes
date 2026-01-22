@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36705.20 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mötod", "mötod.csproj", "{9CE38F65-CB71-4968-B33F-93D862B99110}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9CE38F65-CB71-4968-B33F-93D862B99110}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9CE38F65-CB71-4968-B33F-93D862B99110}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9CE38F65-CB71-4968-B33F-93D862B99110}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9CE38F65-CB71-4968-B33F-93D862B99110}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C80677DC-2126-4FBD-A612-5B058AF9F721}
+	EndGlobalSection
+EndGlobal
