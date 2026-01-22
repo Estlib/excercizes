@@ -7,6 +7,29 @@ namespace FileOperations2
         {
             DisplayThisFile();
             FindWord("kid");
+            /* Kirjuta meetod mis loeb kokku mitu korda mingi sõna 
+             * esineb, ning välja kuvatakse ainult kordade arv */
+            HowManyWord("kid");
+        }
+
+        public static void HowManyWord(string filter)
+        {
+            int countOfWord = 0;
+            using (StreamReader thisFile = new StreamReader("G:\\Users\\K\\Desktop\\thing\\ülesanded\\excercizes\\Failid\\FileOperations2\\laulusõnad.txt"))
+            {
+                while (thisFile.EndOfStream == false)
+                {
+                    string thisLine = thisFile.ReadLine();
+                    
+                    if (thisLine.Contains(filter))
+                    {
+                        countOfWord++;
+                    }
+
+                }
+                thisFile.Close();
+            }
+            Console.WriteLine($"Sõna {filter} esines {countOfWord} korda");
         }
 
         public static void FindWord(string filter)
